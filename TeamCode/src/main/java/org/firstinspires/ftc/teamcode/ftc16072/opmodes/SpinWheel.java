@@ -22,6 +22,8 @@ public class SpinWheel extends OpMode {
     public void loop() {
         wheel.spin();
         telemetry.addData("position: ",wheel.getPosition());
+        telemetry.addData("Motor position", wheel.wheelMotor.getCurrentPosition());
+        telemetry.addData("button ", wheel.button.isPressed());
 
     }
 }
