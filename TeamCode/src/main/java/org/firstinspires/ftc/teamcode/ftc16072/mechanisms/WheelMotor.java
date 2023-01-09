@@ -8,15 +8,14 @@ public class WheelMotor extends Mechanism {
     public DcMotor wheelMotor;
     public TouchSensor button;
     private static int currentSpin;
-    public final static int OFFSET = 8;
-    private final static int WHEEL_ROTATION = 1120;
-    private final static int SLICE = 1120 / 6 + OFFSET;
-    private final static int OUTREACH = (WHEEL_ROTATION * 2) + SLICE + OFFSET;
-    private final static int TEAM_PLAN =(WHEEL_ROTATION * 4) + 2*SLICE + OFFSET;
-    private final static int DESIGN_PROCESS = (WHEEL_ROTATION * 6) + 3*SLICE + OFFSET;
-    private final static int EXPERTS = (WHEEL_ROTATION * 8) + 4 * SLICE + OFFSET;
-    private final static int CONTROL_CODE = (WHEEL_ROTATION * 10) + 5 * SLICE + OFFSET;
-    private final static int GOALS = (WHEEL_ROTATION * 12) + 6*SLICE + OFFSET  ;
+    private final static int WHEEL_ROTATION = 1160  ;
+    private final static int SLICE = 1160 / 6 ;
+    private final static int OUTREACH = (WHEEL_ROTATION * 2) ;
+    private final static int TEAM_PLAN =(WHEEL_ROTATION * 4) + SLICE ;
+    private final static int DESIGN_PROCESS = (WHEEL_ROTATION * 6) + 2*SLICE ;
+    private final static int EXPERTS = (WHEEL_ROTATION * 8) + 3 * SLICE ;
+    private final static int CONTROL_CODE = (WHEEL_ROTATION * 10) + 4 * SLICE ;
+    private final static int GOALS = (WHEEL_ROTATION * 12) + 5 *SLICE  ;
 
     boolean isPressed;
 
